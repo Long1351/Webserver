@@ -1,0 +1,32 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #76bfcc;
+}
+#add-button{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    background-color: lightgreen;
+    font-size: 200%;
+}
+#delete-button{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-color: lightgreen;
+    font-size: 200%;
+}
+h1{
+    background-color: lightgreen;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
