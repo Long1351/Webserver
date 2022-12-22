@@ -1,5 +1,28 @@
 {
   "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
     "selenium-webdriver": "^4.7.1"
-  }
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  },
+  "name": "node.js-server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "devs": "nodemon express.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Long1351/node.js-server.git"
+  },
+  "author": "long",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Long1351/node.js-server/issues"
+  },
+  "homepage": "https://github.com/Long1351/node.js-server#readme",
+  "description": ""
 }
