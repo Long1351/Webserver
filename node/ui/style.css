@@ -1,8 +1,8 @@
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
     background-color: #76bfcc;
 }
-#add-button{
+#add-button {
     height: 100%-200px;
     width: 100%-200px;
     border-radius: 50%;
@@ -13,10 +13,10 @@ body{
     background-color: lightgreen;
     font-size: 200%;
 }
-#add-button:hover{
+#add-button:hover {
     cursor: pointer;
 }
-h1{
+h1 {
     background-color: lightgreen;
     display: block;
     text-align: center;

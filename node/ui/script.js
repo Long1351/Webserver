@@ -1,5 +1,8 @@
 function addbutton() {
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://127.0.0.1:3000/node/app.js');
-    xhr.send();
+    let input = prompt("Was willst du zu deiner TodoList hinzufügen??");
+    fetch('/addItem', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json'},
+        body: JSON.stringify({"input":input})
+    })
 }
