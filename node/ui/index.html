@@ -4,23 +4,36 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Node</title>
+        <title>To-Do Liste</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <header>
             <h1>Einkaufsliste</h1>
         </header>
         <main>
-            <br><br>
-            <form action="">
+            <form>
                 <fieldset>
                     <legend>Deine Sachen</legend>
-                    <input type="checkbox" title="Auswählen">test
+                    <div id="list">
+                        <div class="item">
+                            <input type="checkbox" name="item" id="item-1">
+                            <label for="item-1">Eier</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" name="item" id="item-2">
+                            <label for="item-2">Milch</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" name="item" id="item-3">
+                            <label for="item-3">Brot</label>
+                        </div>
                 </fieldset>
             </form>
-            <button id="add-button" type="submit" onclick="addbutton">+</button>
-            <button id="delete-button" type="submit" onclick="deletebutton">-</button>
+            <button id="add-button" type="submit" onclick="addbutton()">
+                +
+            </button>
         </main>
     </body>
 </html>

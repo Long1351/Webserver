@@ -3,26 +3,18 @@ body{
     background-color: #76bfcc;
 }
 #add-button{
-    height: 100px;
-    width: 100px;
+    height: 100%-200px;
+    width: 100%-200px;
     border-radius: 50%;
-    border: none;
+    border: 2px solid #76bfcc;
     position: absolute;
-    left: 20px;
-    top: 10px;
+    right: 15px;
+    bottom: 15px;
     background-color: lightgreen;
     font-size: 200%;
 }
-#delete-button{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    border: none;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    background-color: lightgreen;
-    font-size: 200%;
+#add-button:hover{
+    cursor: pointer;
 }
 h1{
     background-color: lightgreen;

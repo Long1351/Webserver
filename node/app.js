@@ -3,6 +3,13 @@ const port = 3000;
 const fs = require('fs');
 
 const server = http.createServer((req, res) => {
+    if (req.url === '/node/ui/script.js') {
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.write('Hello World');    
+        res.end();
+        return;
+    }
+
     res.writeHead(200, { 'Content-Type': 'text/html' });
     fs.readFile('ui/index.html', function(error, data) {
         if (error) {
