@@ -7,14 +7,15 @@ function addbutton() {
     })
 }
 
-fetch('/getitems', {
+/*fetch('/getitems', {
     method: 'GET',
 }).then(
     function(res) {
-        const div = document.createElement("div");
+        let div = document.createElement("div");
         div.classList.add("item");
         console.log(res.text())
         div.innerHTML = "<input type=\"checkbox\" name=\"item\" id=\"item-1\">\n<label for=\"item-1\">" + res.text() + "</label>"
         document.querySelector("#list").appendChild(div);
     }
 )
+*/

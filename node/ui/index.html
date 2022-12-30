@@ -9,33 +9,19 @@
     </head>
     <body>
         <header>
-            <h1>Einkaufsliste</h1>
+            <a id="logo" href="http://127.0.0.1:3000/node/ui/"><h1>Einkaufsliste</h1></a>
         </header>
         <main>
-            <form>
+            <div>
                 <fieldset>
                     <legend>Deine Sachen</legend>
-                    <div id="list">
-                        
-
-
-                        <div class="item">
-                            <input type="checkbox" name="item" id="item-1">
-                            <label for="item-1">Eier</label>
-                        </div>
-                        <div class="item">
-                            <input type="checkbox" name="item" id="item-2">
-                            <label for="item-2">Milch</label>
-                        </div>
-                        <div class="item">
-                            <input type="checkbox" name="item" id="item-3">
-                            <label for="item-3">Brot</label>
-                        </div>
+                    <ul id="list">
+                        <li class="listItem">sad</li>
+                    </ul>
                 </fieldset>
-            </form>
-            <button id="add-button" type="submit" onclick=addbutton()>
-                +
-            </button>
+                <button id="add-button" type="submit" onclick=addbutton()>+</button>
+                <form action="dsa"></form>
+            </div>
         </main>
     </body>
 </html>

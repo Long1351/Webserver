@@ -8,9 +8,7 @@ const server = http.createServer((req, res) => {
         fs.readFile('list.json', (error, data) => {
             res.write(JSON.parse(data)["products"].toString());
             res.end();
-        });
-
-        
+        });  
     }
 
     if (req.url == '/addItem') {
@@ -21,7 +19,6 @@ const server = http.createServer((req, res) => {
         req.on('end', () => {
             
         });
-
 
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.write('Hello World');
