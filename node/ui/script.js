@@ -5,7 +5,10 @@ function addbutton() {
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify({ 'input': input })
     })
+    document.getElementById("add-button").style.display = "none";
+    
 }
+
 
 /*fetch('/getitems', {
     method: 'GET',

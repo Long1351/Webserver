@@ -12,16 +12,20 @@
             <a id="logo" href="http://127.0.0.1:3000/node/ui/"><h1>Einkaufsliste</h1></a>
         </header>
         <main>
-            <div>
-                <fieldset>
+            <fieldset>
                     <legend>Deine Sachen</legend>
                     <ul id="list">
                         <li class="listItem">sad</li>
                     </ul>
-                </fieldset>
-                <button id="add-button" type="submit" onclick=addbutton()>+</button>
-                <form action="dsa"></form>
-            </div>
+            </fieldset>
+            <button id="add-button" type="submit" onclick=addbutton()>+</button>
+            <form action="/addItem" method="post">
+                <div id="inModal">
+                    <label for="item" id="itemLabel">Neuer Eintrag</label>
+                    <button type="button" id="closeBtn">×</button>
+                    <input type="text" id="item">
+                </div>
+            </form>
         </main>
     </body>
 </html>
