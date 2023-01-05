@@ -2,6 +2,7 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: lightgray;
     font-size: 16px;
+    -webkit-locale: "de";
 }
 #add-button {
     height: 50px;
@@ -47,8 +48,8 @@ h1 {
     width: 25px;
     height: 25px;
     background-color: #76bfcc; /*Deine Wunschfarbe des Buttons*/
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
     cursor: pointer;
     border: none;
     position: absolute;
