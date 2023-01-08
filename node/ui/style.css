@@ -118,11 +118,10 @@ input:checked~.slider::before {
     background-color: white;
 }
 
-
 .slider.round {
     border-radius: 34px;
 }
 
 .slider.round::before {
-    border-radius: 51%;
+    border-radius: 50%;
 }
