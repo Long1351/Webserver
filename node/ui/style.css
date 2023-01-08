@@ -61,7 +61,6 @@ h1 {
     width: 25px;
     height: 25px;
     background-color: #76bfcc;
-    /*Deine Wunschfarbe des Buttons*/
     -webkit-border-radius: 100%;
     border-radius: 100%;
     cursor: pointer;
@@ -78,45 +77,52 @@ h1 {
     width: 60px;
     height: 34px;
 }
-.switch input {
+
+.switch label {
     opacity: 0;
-    width: 0;
-    height: 0;
 }
 
 /* The slider */
 .slider {
     position: absolute;
-    cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
 }
+
 .slider::before {
+    cursor: pointer;
     position: absolute;
     content: "";
     height: 26px;
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: black;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 
-input:checked + .slider { background-color: rgb(31, 31, 31); }
+input:checked~.slider {
+    background-color: rgb(31, 31, 31);
+}
 
-input:checked + .slider:before {
+input:checked~.slider::before {
     -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
     transform: translateX(26px);
+    background-color: white;
 }
 
 
-.slider.round { border-radius: 34px; }
-.slider.round:before { border-radius: 50%; }
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round::before {
+    border-radius: 51%;
+}
