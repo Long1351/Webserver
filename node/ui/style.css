@@ -11,6 +11,16 @@ body {
     --backgroundcolor: rgb(230, 230, 230);
 }
 
+@media (prefers-color-scheme:dark) {
+    :root {
+        --main-color: #76bfcc;
+        --backgroundcolor: rgb(30, 30, 30);
+    }
+    body{
+        color: white;
+    }
+}
+
 #add-button {
     height: 50px;
     width: 50px;
@@ -108,9 +118,8 @@ h1 {
     transition: .4s;
 }
 
-
 input:checked~.slider {
-    background-color: rgb(31, 31, 31);
+    background-color: grey;
 }
 
 input:checked~.slider::before {
@@ -135,5 +144,4 @@ footer{
 footer div{
     display: inline;
     position: absolute;
-
 }
