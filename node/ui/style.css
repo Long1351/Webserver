@@ -21,6 +21,7 @@ body {
     bottom: 15px;
     background-color: lightgreen;
     font-size: 200%;
+    display: inline;
 }
 
 #add-button:hover {
@@ -78,7 +79,7 @@ h1 {
     height: 34px;
 }
 
-.switch label {
+.switch input {
     opacity: 0;
 }
 
@@ -124,4 +125,15 @@ input:checked~.slider::before {
 
 .slider.round::before {
     border-radius: 50%;
+}
+
+footer{
+    position: absolute;
+    bottom: 10%;
+}
+
+footer div{
+    display: inline;
+    position: absolute;
+
 }
