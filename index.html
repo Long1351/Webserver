@@ -14,12 +14,38 @@
             background-color: black;
             color: white;
         }
+
         header {
             text-align: center;
             margin-top: 10%;
         }
+
         h1 {
+            display: inline-flex;
             font-size: 50px;
+        }
+        h1 .dyn-text{
+            margin-left: 15px;
+        }
+        .dyn-text li{
+            list-style: none;
+        }
+        .dyn-text li span {
+            position: relative;
+        }
+        .dyn-text li span::after {
+            content: "";
+            position: absolute;
+            left : 0;
+            width: 100%;
+            height: 100%;
+            border-left: 2px solid white;
+            animation: typing 1.5s steps(20) infinite;
+        }
+        @keyframes typing {
+            100% {
+                left: 100%;
+            }
         }
         .grid {
             display: grid;
@@ -27,44 +53,55 @@
             grid-gap: 5%;
             margin: 7%;
         }
+
         .gridel {
             color: black;
             padding: 10px;
             text-align: center;
             border-radius: 20px;
         }
+
         .gridel:hover {
             background-color: black;
             transition: 0.5s;
         }
+
         .gridel:not(:hover) {
             transition: 0.5s;
         }
+
         .red {
             background-color: rgb(255, 45, 45);
             border: 2px solid rgb(255, 45, 45);
         }
+
         .red:hover {
             color: rgb(255, 45, 45);
         }
+
         .blue {
             background-color: blue;
             border: 2px solid blue;
         }
+
         .blue:hover {
             color: blue;
         }
+
         .green {
             background-color: green;
             border: 2px solid green;
         }
+
         .green:hover {
             color: green;
         }
+
         .yellow {
             background-color: yellow;
             border: 2px solid yellow;
         }
+
         .yellow:hover {
             color: yellow;
         }
@@ -73,7 +110,15 @@
 
 <body>
     <header>
-        <h1>Ich bin Do Long</h1>
+        <h1>
+            <div class="static-txt">Ich bin</div>
+            <ul class="dyn-text">
+                <li><span>Do Long</span></li>
+                <li><span>ein C# Developer</span></li>
+                <li><span>ein Javascript Developer</span></li>
+                <li><span>ein Discord-Bot Developer</span></li>
+            </ul>
+        </h1>
     </header>
     <div class="grid">
         <div class="gridel red">Das Webserver Projekt, das auch diese Website enthält.</div>
