@@ -1,22 +1,18 @@
 const http = require('http');
-const port = 3000;
-const fs = require('fs'); 
+const fs = require('fs');
+const port = 1000;
 
-const server = http.createServer((req, res) => {  
+http.createServer((req, res) => {
     if (req.url == '/') {
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        fs.readFile('node/ui/index.html', function(error, data) {
-            if (error) {
-                console.error(error);
-                res.end('An error occurred');
-                return;
+        fs.readFile('./node/ui/index.html', (err, data) => {
+            if (err) {
+                res.writeHead(404);
+                res.write('Error: File Not Found');
+            } else {
+                res.writeHead(200, { 'Content-Type': 'text/html' });
+                res.write(data);
             }
-            res.write(data);
             res.end();
-        });
-    }
-});
-
-server.listen(port, () => {
-    console.log('Server is listening on port ' + port);
-});
+        })
+    };
+}).listen(port, () => console.log(`Server running on port ${port}`));

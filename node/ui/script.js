@@ -2,13 +2,10 @@ function addbutton() {
     let input = prompt("Was willst du zu deiner TodoList hinzufügen??");
     fetch('/addItem', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json'},
-        body: JSON.stringify({ 'input': input })
-    })
-    document.getElementById("add-button").style.display = "none";
-    
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 'input': input }),
+    }) 
 }
-
 
 /*fetch('/getitems', {
     method: 'GET',
