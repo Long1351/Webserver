@@ -6,7 +6,7 @@
     --font-color: white;
 }
 
-@media (prefers-color-scheme:light) {
+@media (prefers-color-scheme: light) {
     :root {
         --backgroundcolor: white;
         --font-color: black;
@@ -65,7 +65,7 @@ header {
 
     45%,
     55% {
-        left: calc(100% + 4px)
+        left: calc(100% + 4px);
     }
 
     100% {
