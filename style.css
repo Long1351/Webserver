@@ -24,7 +24,6 @@
 }
 
 body {
-    align-content: center;
     min-height: 100vh;
     color: white;
 }
@@ -49,7 +48,7 @@ header {
     color: var(--font-color);
 }
 
-.text.sec-text::before {
+.text#sec-text::before {
     content: "";
     position: absolute;
     top: 0;
@@ -62,7 +61,6 @@ header {
 }
 
 @keyframes animate {
-
     45%,
     55% {
         left: calc(100% + 4px);
@@ -75,7 +73,7 @@ header {
 
 a {
     background: none;
-    color: var(--font-color);
+    color: black;
     text-decoration: none;
     transition: 0.5s;
     cursor: default;
