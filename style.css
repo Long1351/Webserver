@@ -2,7 +2,7 @@
 
 :root {
     --blue: #4070f4;
-    --backgroundcolor: black;
+    --backgroundcolor: rgb(36, 36, 36);
     --font-color: white;
 }
 
@@ -61,12 +61,13 @@ header {
 }
 
 @keyframes animate {
+
     45%,
     55% {
         left: calc(100% + 4px);
     }
 
-    100% {
+    to {
         left: 0%;
     }
 }
@@ -77,6 +78,21 @@ a {
     text-decoration: none;
     transition: 0.5s;
     cursor: default;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(4, 4fr);
+    grid-auto-columns: 25%;
+    grid-gap: 20px;
+    margin: 20px;
 }
 
 .gridel:hover.blue a {
@@ -99,20 +115,6 @@ a:hover {
     text-decoration: underline;
 }
 
-h2 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 30px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 4fr);
-    grid-template-rows: repeat(4, 4fr);
-    grid-auto-columns: 25%;
-    grid-gap: 20px;
-    margin: 20px;
-}
 
 .gridel {
     display: inline-grid;
