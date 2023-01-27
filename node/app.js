@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const port = 1000;
 
-http.createServer((req, res) => {
+http.createServer((_req, res) => {
     function sendFile(filename, contentType) {
         fs.readFile(filename, (error, data) => {
             if (error) {
@@ -15,13 +15,11 @@ http.createServer((req, res) => {
             }
         });
     }
-    
-    if (req.url == "/") {
-        sendFile("./node/ui/index.html", "text/html");
-        sendFile("./node/ui/style.css", "text/css");
-        sendFile("./node/ui/script.js", "text/javascript");
-        res.end();
-    }
+
+    sendFile("./node/ui/index.html", "text/html");
+    sendFile("./node/ui/style.css", "text/css");
+    sendFile("./node/ui/script.js", "text/javascript");
+    res.end();
 }).listen(port, (error) => {
     if (error) {
         console.log("Something went wrong" + error);
