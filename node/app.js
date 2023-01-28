@@ -1,21 +1,18 @@
-const express = require("express");
-const app = express();
-const fs = require("fs");
-const port = 3000;
+const http = require('http');
+const fs = require('fs');
+const port = 1000;
 
-app.all("*", (req, res) => {
-    function sendFile(path) {
-        fs.readFile(path, (err, data) => {
+http.createServer((req, res) => {
+    if (req.url == '/') {
+        fs.readFile('./node/ui/index.html', (err, data) => {
             if (err) {
-                res.send("404 Not Found");
+                res.writeHead(404);
+                res.write('Error: File Not Found');
             } else {
-                res.send(data);
+                res.writeHead(200, { 'Content-Type': 'text/html' });
+                res.write(data);
             }
-        });
-    }
-    sendFile("index.html");
-});
-
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+            res.end();
+        })
+    };
+}).listen(port, () => console.log(`Server running on port ${port}`));

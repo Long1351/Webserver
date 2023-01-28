@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Einkaufsliste</title>
         <script src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
     <body>
         <header>
@@ -13,24 +14,28 @@
         </header>
         <main>
             <fieldset>
-                    <legend>Deine Sachen</legend>
-                    <ul id="list">
-                        <li class="listItem">sad</li>
-                    </ul>
+                <legend>Deine Sachen</legend>
+                <ul id="list">
+                    <li class="listItem">sad</li>
+                </ul>
             </fieldset>
-            <button id="add-button" type="submit" onclick=addbutton()>+</button>
+            <button id="add-button" type="submit" onclick="addbutton()">
+                +
+            </button>
             <form action="/addItem" method="post">
                 <div id="inModal">
                     <label for="item" id="itemLabel">Neuer Eintrag</label>
-                    <button type="button" id="closeBtn" name="Schließen">×</button>
-                    <input type="text" id="item">
+                    <button type="button" id="closeBtn" name="Schließen">
+                        ×
+                    </button>
+                    <input type="text" id="item" />
                 </div>
             </form>
         </main>
-        <footer>          
+        <footer>
             <div>
                 <label class="switch">
-                    <input type="checkbox" title="Nichts">
+                    <input type="checkbox" title="Nichts" />
                     <div class="slider round"></div>
                 </label>
             </div>
