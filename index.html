@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Einkaufsliste</title>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Long1351 - long#7615</title>
+        <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+        <link rel="stylesheet" href="/github/style.css" />
+        <script defer src="/github/script.js"></script>
     </head>
+
     <body>
         <header>
-            <a id="logo" href="/"><h1>Einkaufsliste</h1></a>
+            <h1 class="container">
+                <span class="text static-text">Ich bin</span>
+                <span class="text" id="sec-text">ssda</span>
+            </h1>
         </header>
         <main>
-            <fieldset>
-                    <legend>Deine Sachen</legend>
-                    <ul id="list">
-                        <li class="listItem">sad</li>
-                    </ul>
-            </fieldset>
-            <button id="add-button" type="submit" onclick=addbutton()>+</button>
-            <form action="/addItem" method="post">
-                <div id="inModal">
-                    <label for="item" id="itemLabel">Neuer Eintrag</label>
-                    <button type="button" id="closeBtn" name="Schließen">×</button>
-                    <input type="text" id="item">
+            <section>
+                <h2>Über mich:</h2>
+                <span class="about">Ich bin ein Programmierer mit 1,5 Jahren Erfahrung in den Programmiersprachen Python, Javascript und C#</span>
+            </section>
+            <section>
+                <h2>Meine Projekte:</h2>
+                <div class="grid">
+                    <div onclick="divred()" class="gridel red">
+                        Das Webserver Projekt, das auch diese Website enthält.
+                    </div>
+                    <div onclick="divblue()" class="gridel blue">
+                        Einen persöhnlichen Pycord-Discord Bot mit der hilfe
+                        vom<a href="http://discord.gg/codingkeks"
+                            >Coding Keks-Server</a
+                        >
+                    </div>
+                    <div onclick="divgreen()" class="gridel green">
+                        Coding Lehrstunden für den Discord User:<a
+                            href="https://discord.com/users.https://discord.com/users/847032613327470593"
+                            >NiklasDerGamer#7032</a
+                        >
+                    </div>
+                    <div onclick="divyellow()" class="gridel yellow">
+                        Einen umfangreichen Discord-Bot für den Server:<a
+                            href="https://discord.gg/wfG8JQMMCB"
+                            >[RP] Community</a
+                        >
+                    </div>
                 </div>
-            </form>
+            </section>
         </main>
-        <footer>          
-            <div>
-                <label class="switch">
-                    <input type="checkbox" title="Nichts">
-                    <div class="slider round"></div>
-                </label>
-            </div>
-        </footer>
     </body>
 </html>
