@@ -1,10 +1,18 @@
 function addbutton() {
-    let input = prompt("Was willst du zu deiner TodoList hinzufügen??");
+    let input = prompt("Was willst du zu deiner Einkaufsliste hinzufügen?");
+    console.log(input);
     fetch('/addItem', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 'input': input }),
-    }) 
+        
+    }).then((res) => {
+            let list = document.createElement("li");
+            list.classList.add("listItem");
+            list.innerHTML = res.body.toString();
+            document.querySelector("#list").appendChild(list);
+        }
+    )
 }
 
 /*fetch('/getitems', {
