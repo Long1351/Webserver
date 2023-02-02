@@ -21,11 +21,10 @@
     font-family: "Roboto", sans-serif;
     background-color: var(--backgroundcolor);
     box-sizing: border-box;
-    animation: no;
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     color: white;
     text-align: center;
 }
@@ -90,13 +89,21 @@ h2 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    align-content: center;
+    margin: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .gridel:hover.blue a {
@@ -120,7 +127,6 @@ a:hover {
 }
 
 .gridel {
-    display: inline;
     color: black;
     padding: 10px;
     text-align: center;
