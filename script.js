@@ -1,8 +1,7 @@
 const text = document.getElementById("sec-text");
 function textLoad() {
     setTimeout(() => {
-        text.textContent = "Do Long";
-        text.style.animation = "none";
+        text.textContent = "Do Long"
     }, 0);
     setTimeout(() => {
         text.textContent = "ein Discord Bot Developer";
