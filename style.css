@@ -21,7 +21,6 @@
     font-family: "Roboto", sans-serif;
     background-color: var(--backgroundcolor);
     box-sizing: border-box;
-    margin-inline: 1vw;
 }
 
 body {
@@ -32,6 +31,11 @@ body {
 header {
     display: flex;
     justify-content: flex-start;
+    margin: 20px;
+}
+
+main {
+    margin: 20px;
 }
 
 .container {
@@ -48,6 +52,7 @@ header {
     color: var(--font-color);
 }
 
+
 .text#sec-text::before {
     content: "";
     position: absolute;
@@ -58,7 +63,12 @@ header {
     background-color: var(--backgroundcolor);
     border-left: var(--blue) 2px solid;
     animation: animate 3s steps(12) infinite;
-    margin: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .text#sec-text::before {
+        display: none;
+    }
 }
 
 @keyframes animate {
