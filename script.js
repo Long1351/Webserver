@@ -1,18 +1,32 @@
 const text = document.getElementById("sec-text");
-function textLoad() {
-    setTimeout(() => {
-        text.textContent = "Do Long";
-    }, 0);
-    setTimeout(() => {
-        text.textContent = "ein Discord Bot Developer";
-    }, 3000);
-    setTimeout(() => {
-        text.textContent = "ein Web-Entwickler";
-    }, 6000);
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
-if (document.documentElement.clientWidth >= 800) {
-    text.textContent = "dasfd";
-} else {
-    textLoad();
-    setInterval(textLoad, 9000);
+
+const textArray = ["Do Long", "Discord-Bot Programmierer", "Web Developer"];
+let sleepTime = 100;
+let j = 0;
+
+async function loop() {
+    while (true) {
+        for (let i = 0; i < textArray[j].length; i++) {
+            text.innerHTML = textArray[j].substring(0, i + 1);
+            await sleep(sleepTime);
+        }
+        await sleep(sleepTime * 10);
+
+        for (let i = textArray[j].length; i > 0; i--) {
+            text.innerHTML = textArray[j].substring(0, i + 1);
+            await sleep(sleepTime);
+        }
+        await sleep(sleepTime * 2);
+
+        if (j == textArray.length - 1) {
+            j = 0;
+        } else {
+            j++;
+        }
+    }
 }
+
+loop();
