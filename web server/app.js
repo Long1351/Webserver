@@ -14,9 +14,6 @@ app.post("/addItem", (req, res) => {
     res.send(body);
 
 });
-app.delete("/delItem", (req, res) => {
-    res.send("File deleted");
-});
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);

@@ -143,8 +143,8 @@ h2 {
     color: green;
 }
 
-.gridel:hover.yellow a {
-    color: yellow;
+.gridel:hover.brown a {
+    color: brown;
 }
 
 .gridel:not(:hover) a {
@@ -174,14 +174,14 @@ a:hover {
     transition: 0.5s;
 }
 
-.red {
-    background-color: rgb(255, 45, 45);
-    border: 2px solid rgb(255, 45, 45);
+.yellow {
+    background-color: yellow;
+    border: 2px solid 
 }
 
-.red:hover {
-    color: rgb(255, 45, 45);
-    box-shadow: 1px 1px 50px 1px rgb(255, 45, 45);
+.yellow:hover {
+    color: yellow;
+    box-shadow: 1px 1px 50px 1px yellow
 }
 
 .blue {
@@ -204,12 +204,12 @@ a:hover {
     box-shadow: 1px 1px 50px 1px green;
 }
 
-.yellow {
-    background-color: yellow;
-    border: 2px solid yellow;
+.brown {
+    background-color: brown;
+    border: 2px solid brown;
 }
 
-.yellow:hover {
-    color: yellow;
-    box-shadow: 1px 1px 50px 1px yellow;
+.brown:hover {
+    color: brown;
+    box-shadow: 1px 1px 50px 1px brown;
 }
