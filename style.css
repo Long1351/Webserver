@@ -73,6 +73,19 @@ main {
     color: var(--typeWrite);
 }
 
+.static-text:hover {
+    text-decoration: none;
+}
+
+.typewrite:hover{
+    transition: 0.5s;
+    box-shadow: 1px 1px 30px 1px var(--typeWrite);
+}
+
+.typewrite:not(:hover) {
+    transition: 0.5s;
+}
+
 
 #cursor {
     padding-left: 5px;
@@ -109,6 +122,10 @@ h2 {
     text-align: center;
     margin-top: 20px;
     font-size: 30px;
+}
+
+.about:focus {
+    outline: 1px solid var(--blue);         
 }
 
 .grid {

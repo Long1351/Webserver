@@ -4,7 +4,7 @@ function sleep(ms) {
 }
 
 const textArray = ["Do Long", "Discord-Bot Programmierer", "Web Developer"];
-let sleepTime = 100;
+const sleepTime = 100;
 let j = 0;
 
 async function loop() {
@@ -16,7 +16,7 @@ async function loop() {
         await sleep(sleepTime * 10);
 
         for (let i = textArray[j].length; i > 0; i--) {
-            text.innerHTML = textArray[j].substring(0, i + 1);
+            text.innerHTML = textArray[j].substring(0, i - 1);
             await sleep(sleepTime);
         }
         await sleep(sleepTime * 2);

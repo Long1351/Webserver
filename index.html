@@ -13,7 +13,7 @@
     <body>
         <header>
             <h1 class="typewrite">
-                <span class="text static-text">Ich bin</span>
+                <a class="text static-text" href="/">Ich bin</a>
                 <span class="text" id="sec-text"></span>
                 <span id="cursor"></span>
             </h1>
@@ -21,19 +21,22 @@
         <main>
             <section>
                 <h2>Über mich:</h2>
-                <span class="para"
+                <span tabindex="0" class="para abaout"
                     >Ich heiße Do Long und gehe gerade noch in die Schule. Als
                     Hobby bin ich ein Programmierer mit 1,5 Jahren Erfahrung in
                     den Programmiersprachen Python, Javascript und C#. Neben
                     diesen Sprachen lerne ich noch wei man SQL Datenbanken
-                    erstellt und verwaltet. Diese bracuhe ich um z.B. ein
+                    erstellt und verwaltet. Diese brauche ich um z.B. ein
                     XP-System für einen Discord-Bot zu programmieren.
                 </span>
             </section>
             <section>
                 <h2>Meine Projekte:</h2>
                 <div class="grid">
-                    <div onclick="divyellow()" class="para gridel yellow">
+                    <div
+                        tabindex="0"
+                        onclick="divyellow()"
+                        class="para gridel yellow">
                         Das Webserver Projekt, das auch diese Website enthält.
                         Ich habe versucht mit ExpressJS eine Middleware zu bauen
                         und damit einen Webserver zu erstellen. <br />
@@ -42,7 +45,10 @@
                         kein Geld bezahlen. Es wäre nett wenn mich jemand, der
                         ein kostenloses Hosting hat, kontaktieren würde.
                     </div>
-                    <div onclick="divbrown()" class="para gridel brown">
+                    <div
+                        tabindex="0"
+                        onclick="divbrown()"
+                        class="para gridel brown">
                         Einen persöhnlichen Pycord-Discord Bot mit der Hilfe vom
                         <a href="http://discord.gg/codingkeks"
                             >Coding Keks-Server</a
@@ -54,7 +60,10 @@
                         nett wenn mich jemand kontaktieren würde, der ein
                         kostenloses Hosting anbietet.
                     </div>
-                    <div onclick="divblue()" class="para gridel blue">
+                    <div
+                        tabindex="0"
+                        onclick="divblue()"
+                        class="para gridel blue">
                         Ich habe den netten
                         <a href="https://discord.com/users/847032613327470593"
                             >NiklasDerGamer#7032</a
@@ -68,14 +77,45 @@
                         kaufen, weil ich mehr Erfahrung habe und schneller
                         fertig bin (keine Garantie für diese Aussage).
                     </div>
-                    <div onclick="divgreen()" class="para gridel green">
-                        Einen umfangreichen Discord-Bot für den Server:
+                    <div
+                        tabindex="0"
+                        onclick="divgreen()"
+                        class="para gridel green">
+                        Das nette Team von
                         <a href="https://discord.gg/wfG8JQMMCB"
                             >[RP] Community</a
                         >
+                        haben mir den Auftrag gegeben, einen Discord-Bot zu
+                        programmieren. Daraus ist dann ein Bot gworden, der über
+                        200 Zeilen Code hat. Es besitzt ein Moderationssystem
+                        und ein Warnsystem.
                     </div>
                 </div>
             </section>
+            <section>
+                <h2>Kontakt:</h2>
+                <div class="grid">
+                    <div class="para gridel yellow">
+                        <a href="https://discord.gg/2Q2qZ2Z"
+                            >Discord-Server von Long1351</a
+                        >
+                    </div>
+                    <div class="para gridel brown">
+                        <a href="https://discord.gg/codingkeks"
+                        >Coding Keks-Server</a
+                        >
+                    </div>
+                    <div class="para gridel blue">
+                        <a href="https://discord.com/users/847032613327470593"
+                        >Mein Programmiererfreund NiklasDerGamer</a
+                        >
+                    </div>
+                    <div class="para gridel green">
+                        <a href="https://discord.gg/wfG8JQMMCB"
+                        >[RP] Community</a
+                        >
+                    </div>
+                </div>
         </main>
     </body>
 </html>
