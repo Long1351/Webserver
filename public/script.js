@@ -1,20 +1,20 @@
 function addbutton() {
     let input = prompt("Was willst du zu deiner Einkaufsliste hinzufügen?");
     console.log(input);
-    fetch('/addItem', {
+    fetch('/additem', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 'input': input }),
         
     }).then((res) => {
-            let list = document.createElement("li");
+            list = document.createElement("li");
             list.classList.add("listItem");
             list.innerHTML = res.body.toString();
+            console.log(list);
             document.querySelector("#list").appendChild(list);
         }
     )
 }
-
 /*fetch('/getitems', {
     method: 'GET',
 }).then(

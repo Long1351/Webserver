@@ -1,3 +1,4 @@
+const { json } = require("express");
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -8,10 +9,9 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/index.html"));
 });
-app.post("/addItem", (req, res) => {
-    let body = JSON.stringify(req.body);
-    console.log(body);
-    res.send(body);
+app.post("/additem", (req, res) => {
+    console.log(JSON.parse(req.body));
+    res.send("wer hat gefragt?");
 
 });
 

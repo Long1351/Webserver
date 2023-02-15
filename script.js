@@ -1,13 +1,13 @@
 const text = document.getElementById("sec-text");
 function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const textArray = ["Do Long", "Discord-Bot Programmierer", "Web Developer"];
-const sleepTime = 100;
-let j = 0;
-
 async function loop() {
+    const textArray = ["Do Long", "Discord-Bot Programmierer", "Web Developer"];
+    const sleepTime = 100;
+    let j = 0;
+
     while (true) {
         for (let i = 0; i < textArray[j].length; i++) {
             text.innerHTML = textArray[j].substring(0, i + 1);
