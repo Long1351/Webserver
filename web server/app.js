@@ -1,4 +1,3 @@
-const { json } = require("express");
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -10,9 +9,12 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/index.html"));
 });
 app.post("/additem", (req, res) => {
-    console.log(JSON.parse(req.body));
+    console.log(typeof req.body);
     res.send("wer hat gefragt?");
+});
 
+app.get("/getitems", (req, res) => {
+    res.send("wer hat gefragt?");
 });
 
 app.listen(port, () => {
