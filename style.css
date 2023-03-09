@@ -22,6 +22,7 @@
     font-family: "Roboto", sans-serif;
     background-color: var(--backgroundcolor);
     box-sizing: border-box;
+    outline: #4070f4;
 }
 
 body {
