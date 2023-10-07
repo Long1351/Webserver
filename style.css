@@ -195,7 +195,7 @@ a:hover {
 
 .yellow:hover {
     color: yellow;
-    box-shadow: 1px 1px 50px 1px yellow
+    box-shadow: 1px 1px 50px 1px yellow;
 }
 
 .blue {
