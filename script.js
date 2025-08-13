@@ -4,7 +4,7 @@ function sleep(ms) {
 }
 
 async function loop() {
-    const textArray = ["Do Long", "Discord-Bot Programmierer", "Web Developer"];
+    const textArray = ["Do Long", "cool", "dumm"];
     const sleepTime = 100;
     let j = 0;
 
