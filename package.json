@@ -6,7 +6,8 @@
     "fs": "^0.0.1-security",
     "knex": "^2.4.0",
     "lowdb": "^5.0.5",
-    "selenium-webdriver": "^4.7.1"
+    "selenium-webdriver": "^4.7.1",
+    "express-rate-limit": "^8.0.1"
   },
   "devDependencies": {
     "dotenv": "^16.0.3",
